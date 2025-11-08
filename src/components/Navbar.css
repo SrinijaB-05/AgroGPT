@@ -1,0 +1,190 @@
+/* Navbar.css - keep your navbar styles + add sidebar styles */
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32; /* green */
+  padding: 10px 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 36px;
+  display: inline-block;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline;
+}
+
+.lang-select {
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  background: white;
+  color: #333;
+}
+
+/* ===== SIDEBAR ===== */
+
+/* overlay sits above page content but below navbar */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.0); /* subtle - you can increase transparency if you want dimming */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms ease;
+  z-index: 190;
+}
+.sidebar-overlay.visible {
+  pointer-events: auto;
+  opacity: 1;
+  background: rgba(0,0,0,0.15);
+}
+
+/* Panel */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 260px;
+  background-color: white;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+  transform: translateX(-110%);
+  transition: transform 240ms ease;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* open state */
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* header */
+.sidebar-header {
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* body */
+.sidebar-body {
+  padding: 12px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.sidebar-item {
+  background: #f7f7f7;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1f2937;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.sidebar-item:hover {
+  background: #f0f9f0;
+}
+
+.history-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+.history-item:hover {
+  background: #f5fdf5;
+}
+
+/* footer - pinned to bottom */
+.sidebar-footer {
+  padding: 12px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-block {
+  font-size: 14px;
+  color: #0f5132;
+  padding: 6px 8px;
+}
+
+/* logout button visual */
+.sidebar-item.logout {
+  color: #c53030;
+  background: #fff5f5;
+  width: 100%;
+}
+
+/* small screens: slightly narrower */
+@media (max-width: 640px) {
+  .sidebar {
+    width: 280px;
+  }
+}

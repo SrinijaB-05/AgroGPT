@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+firebase-admin
+pymongo
+python-jose[cryptography]
+pydantic
+pydantic-settings
+python-dotenv
+requests
+passlib[bcrypt]

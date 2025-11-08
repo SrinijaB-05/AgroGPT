@@ -1,0 +1,64 @@
+{
+  "navbar": {
+    "title": "AgroGPT",
+    "home": "Home",
+    "about": "About",
+    "reports": "Reports",
+    "signup": "Sign Up"
+  },
+  "sidebar": {
+    "newChat": "New Chat",
+    "conversation": "Conversation",
+    "logout": "Logout",
+    "guest": "Guest"
+  },
+  "hero": {
+    "title": "Welcome to AgroGPT",
+    "icon": "🌾",
+    "description": "Your AI-powered Agricultural Assistant. Upload images, ask questions, and get instant insights for smarter farming decisions.",
+    "tryChat": "Try AgroGPT Chat"
+  },
+  "chat": {
+    "title": "Chat with AgroGPT",
+    "header": "AgroGPT — Your Smart Farming Assistant",
+    "placeholder": "Ask AgroGPT about crops, diseases, or treatments...",
+    "defaultResponse": "I am ready to help you!",
+    "plantHealthy": "The plant looks healthy.",
+    "nitrogenDeficiency": "Nitrogen deficiency detected.",
+    "pestDetected": "Pests detected on the plant.",
+    "userEcho": "You asked: "
+  },
+  "signin": {
+    "title": "Sign In to AgroGPT",
+    "email": "Email",
+    "password": "Password",
+    "continue": "Continue",
+    "noAccount": "Don’t have an account?",
+    "signUp": "Sign Up",
+    "scanQR": "Scan this QR code in your Google Authenticator or enter the manual key below:",
+    "enterCode": "Enter the 6-digit code from your app:",
+    "verify": "Verify & Login",
+    "invalidCode": "Invalid TOTP code",
+    "error": "Error"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "button": "Sign Up",
+    "success": "Signup success! Please scan the QR code in your authenticator.",
+    "failed": "Signup failed.",
+    "error": "Server error",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign In"
+  },
+  "about": {
+    "title": "About AgroGPT",
+    "description": "AgroGPT is your AI-powered farming assistant designed to help farmers, researchers, and agronomists make informed agricultural decisions. It combines computer vision and natural language processing to detect plant diseases, suggest treatments, and summarize field insights intelligently."
+  },
+  "reports": {
+    "title": "Reports",
+    "description": "Your generated crop reports and history will appear here."
+  }
+}
