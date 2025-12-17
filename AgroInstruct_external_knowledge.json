@@ -1,0 +1,1257 @@
+{
+  "external_knowledge_agroGPT": {
+    "diseases": [
+      {
+        "id": "D001",
+        "name": "Early Blight",
+        "crop": "Tomato",
+        "cause": "Fungal infection caused by Alternaria solani",
+        "symptoms": [
+          "Dark concentric spots on older leaves",
+          "Yellowing of affected leaves",
+          "Reduced fruit size and yield"
+        ],
+        "management": {
+          "chemical": "Apply Mancozeb 0.25% or Chlorothalonil 0.2%",
+          "biological": "Use Trichoderma harzianum in soil before transplanting",
+          "cultural": "Rotate crops, avoid overhead irrigation"
+        }
+      },
+      {
+        "id": "D002",
+        "name": "Bacterial Leaf Blight",
+        "crop": "Rice",
+        "cause": "Xanthomonas oryzae pv. oryzae",
+        "symptoms": [
+          "Water-soaked stripes on leaf margins",
+          "Leaves turn yellow and dry",
+          "Severe infection causes wilting"
+        ],
+        "management": {
+          "chemical": "Spray Streptocycline 0.01% + Copper oxychloride 0.3%",
+          "cultural": "Use resistant varieties, avoid late planting"
+        }
+      },
+      {
+        "id": "D003",
+        "name": "Powdery Mildew",
+        "crop": "Cucumber",
+        "cause": "Podosphaera xanthii fungus",
+        "symptoms": [
+          "White powdery growth on upper leaf surface",
+          "Premature leaf drop",
+          "Reduced fruit quality"
+        ],
+        "management": {
+          "chemical": "Apply Wettable Sulphur 0.25%",
+          "biological": "Use Bacillus subtilis-based biocontrol sprays"
+        }
+      },
+      {
+        "id": "D004",
+        "name": "Late Blight",
+        "crop": "Potato",
+        "cause": "Phytophthora infestans",
+        "symptoms": [
+          "Brown lesions on leaves and stems",
+          "White fungal growth on undersides",
+          "Tubers rot during storage"
+        ],
+        "management": {
+          "chemical": "Spray Metalaxyl + Mancozeb combination",
+          "cultural": "Destroy infected debris, ensure field drainage"
+        }
+      },
+      {
+        "id": "D005",
+        "name": "Rust Disease",
+        "crop": "Wheat",
+        "cause": "Puccinia species (leaf, stem, stripe rust)",
+        "symptoms": [
+          "Orange pustules on leaves and stems",
+          "Premature drying of leaves",
+          "Reduced grain weight"
+        ],
+        "management": {
+          "chemical": "Apply Propiconazole 0.1%",
+          "cultural": "Grow resistant varieties, avoid high nitrogen use"
+        }
+      },
+      {
+        "name": "Septoria Leaf Spot",
+        "crop": "Tomato",
+        "cause": "Fungal (Septoria lycopersici)",
+        "symptoms": [
+          "Small circular dark spots with light centers",
+          "Yellowing of surrounding tissue"
+        ],
+        "management": {
+          "chemical": "Apply chlorothalonil or mancozeb as labeled",
+          "cultural": "Remove infected debris; rotate crops"
+        },
+        "id": "D006"
+      },
+      {
+        "name": "Anthracnose",
+        "crop": "Mango",
+        "cause": "Fungal (Colletotrichum spp.)",
+        "symptoms": [
+          "Sunken dark lesions on fruit",
+          "Fruit rot during storage"
+        ],
+        "management": {
+          "cultural": "Harvest carefully; remove infected fruit",
+          "postharvest": "Hot-water treatment; fungicide dips where permitted"
+        },
+        "id": "D007"
+      },
+      {
+        "name": "Verticillium Wilt",
+        "crop": "Cotton",
+        "cause": "Soil-borne fungus (Verticillium dahliae)",
+        "symptoms": [
+          "Wilting, often one-sided",
+          "Yellowing and stunting"
+        ],
+        "management": {
+          "cultural": "Plant resistant varieties; crop rotation with non-hosts",
+          "chemical": "Soil fumigation in high-value situations (restricted)"
+        },
+        "id": "D008"
+      },
+      {
+        "name": "Bacterial Canker",
+        "crop": "Tomato",
+        "cause": "Bacterial (Clavibacter michiganensis)",
+        "symptoms": [
+          "Cankers on stems, wilting",
+          "Brown streaks inside stem when cut"
+        ],
+        "management": {
+          "cultural": "Use certified disease-free transplants; sanitize tools",
+          "chemical": "Copper bactericides can reduce spread"
+        },
+        "id": "D009"
+      },
+      {
+        "name": "Leaf Curl Virus",
+        "crop": "Okra",
+        "cause": "Virus (often whitefly-transmitted)",
+        "symptoms": [
+          "Leaf curling and distortion",
+          "Stunted growth and reduced yield"
+        ],
+        "management": {
+          "cultural": "Remove infected plants; control whiteflies",
+          "resistant_varieties": "Use tolerant cultivars if available"
+        },
+        "id": "D010"
+      },
+      {
+        "name": "Powdery Mildew (other)",
+        "crop": "Multiple crops",
+        "cause": "Fungal",
+        "symptoms": [
+          "White powdery spots on leaves"
+        ],
+        "management": {
+          "general": "Grow resistant varieties; improve airflow; fungicides when needed"
+        },
+        "id": "D011"
+      },
+      {
+        "name": "Black Rot",
+        "crop": "Grapevine",
+        "cause": "Fungal",
+        "symptoms": [
+          "Black lesions on fruit and shoots"
+        ],
+        "management": {
+          "general": "Prune out infected tissue; apply protectant fungicides"
+        },
+        "id": "D012"
+      },
+      {
+        "name": "Bacterial Wilt (Cucumber)",
+        "crop": "Cucumber",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Sudden wilting; brown vascular tissue"
+        ],
+        "management": {
+          "general": "Use resistant varieties; soil sanitation"
+        },
+        "id": "D013"
+      },
+      {
+        "name": "Leaf Spot (Cercospora)",
+        "crop": "Sugarcane",
+        "cause": "Fungal",
+        "symptoms": [
+          "Small circular spots that enlarge"
+        ],
+        "management": {
+          "general": "Remove crop residue; fungicide sprays"
+        },
+        "id": "D014"
+      },
+      {
+        "name": "Grey Mold (Botrytis)",
+        "crop": "Strawberry",
+        "cause": "Fungal",
+        "symptoms": [
+          "Soft grey lesions on fruit and flowers"
+        ],
+        "management": {
+          "general": "Improve ventilation; fungicides; remove infected parts"
+        },
+        "id": "D015"
+      },
+      {
+        "name": "Apple Scab (additional)",
+        "crop": "Apple",
+        "cause": "Fungal",
+        "symptoms": [
+          "Scabby lesions on leaves and fruit"
+        ],
+        "management": {
+          "general": "Timely fungicide sprays; sanitation"
+        },
+        "id": "D016"
+      },
+      {
+        "name": "Rust (additional)",
+        "crop": "Sorghum",
+        "cause": "Fungal",
+        "symptoms": [
+          "Pustules on leaves; orange spores"
+        ],
+        "management": {
+          "general": "Resistant varieties; fungicide as needed"
+        },
+        "id": "D017"
+      },
+      {
+        "name": "Bacterial Soft Rot",
+        "crop": "Storage crops",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Soft, watery decay in storage"
+        ],
+        "management": {
+          "general": "Improve postharvest handling; sanitation"
+        },
+        "id": "D018"
+      },
+      {
+        "name": "Cercospora Leaf Spot",
+        "crop": "Beet",
+        "cause": "Fungal",
+        "symptoms": [
+          "Circular lesions with tan centers"
+        ],
+        "management": {
+          "general": "Rotate crops; fungicide if severe"
+        },
+        "id": "D019"
+      },
+      {
+        "name": "Alternaria Early Blight",
+        "crop": "Potato",
+        "cause": "Fungal",
+        "symptoms": [
+          "Concentric ring lesions on leaves"
+        ],
+        "management": {
+          "general": "Use certified seed; fungicide application"
+        },
+        "id": "D020"
+      },
+      {
+        "name": "Fusarium Crown Rot",
+        "crop": "Wheat",
+        "cause": "Fungal",
+        "symptoms": [
+          "Yellowing, wilting and crown discoloration"
+        ],
+        "management": {
+          "general": "Resistant varieties; crop rotation"
+        },
+        "id": "D021"
+      },
+      {
+        "name": "Viral Mosaic (e.g., TMV)",
+        "crop": "Various",
+        "cause": "Viral",
+        "symptoms": [
+          "Mottled mosaic leaf patterns; stunting"
+        ],
+        "management": {
+          "general": "Use virus-free seed; control vectors"
+        },
+        "id": "D022"
+      },
+      {
+        "name": "Brown Rot",
+        "crop": "Stone fruit",
+        "cause": "Fungal",
+        "symptoms": [
+          "Blossom blight and fruit rot"
+        ],
+        "management": {
+          "general": "Sanitation; fungicide sprays in bloom"
+        },
+        "id": "D023"
+      },
+      {
+        "name": "Citrus Canker",
+        "crop": "Citrus",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Raised lesions on leaves and fruit"
+        ],
+        "management": {
+          "general": "Use clean nursery stock; copper sprays in outbreaks"
+        },
+        "id": "D024"
+      },
+      {
+        "name": "Bunt (Tilletia)",
+        "crop": "Wheat",
+        "cause": "Fungal",
+        "symptoms": [
+          "Smelly bunt balls in grain"
+        ],
+        "management": {
+          "general": "Use certified seed; seed treatment"
+        },
+        "id": "D025"
+      },
+      {
+        "name": "Bacterial Blight (Pomegranate)",
+        "crop": "Pomegranate",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Leaf lesions and fruit spots"
+        ],
+        "management": {
+          "general": "Sanitation; copper sprays"
+        },
+        "id": "D026"
+      },
+      {
+        "name": "Mosaic Virus (Papaya)",
+        "crop": "Papaya",
+        "cause": "Viral",
+        "symptoms": [
+          "Mottling and leaf distortion"
+        ],
+        "management": {
+          "general": "Use resistant varieties; control aphids"
+        },
+        "id": "D027"
+      },
+      {
+        "name": "Seedling Damping-off",
+        "crop": "Various seedlings",
+        "cause": "Fungal/oomycete",
+        "symptoms": [
+          "Seedlings collapse at soil line"
+        ],
+        "management": {
+          "general": "Improve drainage; use sterile media"
+        },
+        "id": "D028"
+      },
+      {
+        "name": "Gummy Stem Blight",
+        "crop": "Cucumber",
+        "cause": "Fungal",
+        "symptoms": [
+          "Brown lesions on stems and leaves"
+        ],
+        "management": {
+          "general": "Crop rotation; fungicide applications"
+        },
+        "id": "D029"
+      },
+      {
+        "name": "Black Rot (Brassica)",
+        "crop": "Brassica",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Blackened veins and V-shaped lesions"
+        ],
+        "management": {
+          "general": "Use clean seed; crop rotation"
+        },
+        "id": "D030"
+      },
+      {
+        "name": "Bacterial Leaf Spot (pepper)",
+        "crop": "Pepper",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Small dark spots that may coalesce"
+        ],
+        "management": {
+          "general": "Use certified seed; sanitation; copper sprays"
+        },
+        "id": "D031"
+      },
+      {
+        "name": "Common Scab",
+        "crop": "Potato",
+        "cause": "Bacterial-like (Streptomyces)",
+        "symptoms": [
+          "Rough scabby lesions on tubers"
+        ],
+        "management": {
+          "general": "Use clean seed; maintain soil moisture"
+        },
+        "id": "D032"
+      },
+      {
+        "name": "Gummosis",
+        "crop": "Citrus",
+        "cause": "Fungal/bacterial complex",
+        "symptoms": [
+          "Gummy exudates on trunk and branches"
+        ],
+        "management": {
+          "general": "Prune infected tissue; improve drainage"
+        },
+        "id": "D033"
+      },
+      {
+        "name": "Phytophthora Root Rot",
+        "crop": "Avocado",
+        "cause": "Oomycete (Phytophthora cinnamomi)",
+        "symptoms": [
+          "Root decay; tree decline"
+        ],
+        "management": {
+          "general": "Use tolerant rootstocks; improve drainage"
+        },
+        "id": "D034"
+      },
+      {
+        "name": "Stem Rust",
+        "crop": "Wheat",
+        "cause": "Fungal (Puccinia graminis)",
+        "symptoms": [
+          "Orange-brown pustules on stems and leaves"
+        ],
+        "management": {
+          "general": "Resistant cultivars; fungicide in severe cases"
+        },
+        "id": "D035"
+      },
+      {
+        "name": "Bacterial Panicle Blight",
+        "crop": "Rice",
+        "cause": "Bacterial",
+        "symptoms": [
+          "Blighted panicles and grain discoloration"
+        ],
+        "management": {
+          "general": "Use resistant varieties; manage irrigation timing"
+        },
+        "id": "D036"
+      },
+      {
+        "name": "Leaf Mottle",
+        "crop": "Papaya",
+        "cause": "Viral",
+        "symptoms": [
+          "Mottled and distorted leaves"
+        ],
+        "management": {
+          "general": "Use virus-free plants; control vectors"
+        },
+        "id": "D037"
+      },
+      {
+        "name": "Cercospora Leaf Blight",
+        "crop": "Soybean",
+        "cause": "Fungal",
+        "symptoms": [
+          "Lesions on leaves leading to defoliation"
+        ],
+        "management": {
+          "general": "Resistant varieties; foliar fungicides"
+        },
+        "id": "D038"
+      },
+      {
+        "name": "Phoma Leaf Spot",
+        "crop": "Olive",
+        "cause": "Fungal",
+        "symptoms": [
+          "Small sunken leaf lesions"
+        ],
+        "management": {
+          "general": "Prune for air flow; apply fungicide when needed"
+        },
+        "id": "D039"
+      },
+      {
+        "name": "Quince Rust",
+        "crop": "Apple/Quince",
+        "cause": "Fungal",
+        "symptoms": [
+          "Bright orange pustules on leaves and fruit"
+        ],
+        "management": {
+          "general": "Remove alternate host plants; fungicide"
+        },
+        "id": "D040"
+      }
+    ],
+    "insects": [
+      {
+        "id": "I001",
+        "name": "Aphids",
+        "crop": "Cotton",
+        "damage": [
+          "Suck sap from leaves and stems",
+          "Cause curling and yellowing of leaves",
+          "Transmit viral diseases"
+        ],
+        "management": {
+          "chemical": "Spray Imidacloprid 0.05%",
+          "biological": "Release ladybird beetles",
+          "cultural": "Avoid excess nitrogen fertilizer"
+        }
+      },
+      {
+        "id": "I002",
+        "name": "Whiteflies",
+        "crop": "Tomato",
+        "damage": [
+          "Feed on plant sap causing leaf curl",
+          "Transmit Tomato Yellow Leaf Curl Virus"
+        ],
+        "management": {
+          "chemical": "Spray Thiamethoxam 0.025%",
+          "biological": "Use neem oil (3%) weekly",
+          "cultural": "Install yellow sticky traps"
+        }
+      },
+      {
+        "id": "I003",
+        "name": "Stem Borer",
+        "crop": "Rice",
+        "damage": [
+          "Dead hearts at vegetative stage",
+          "Whiteheads at reproductive stage"
+        ],
+        "management": {
+          "chemical": "Apply Chlorantraniliprole 0.4%",
+          "cultural": "Clip and destroy egg masses"
+        }
+      },
+      {
+        "id": "I004",
+        "name": "Fruit Borer",
+        "crop": "Chili",
+        "damage": [
+          "Bores into young fruits causing rotting",
+          "Reduces market quality"
+        ],
+        "management": {
+          "chemical": "Spray Spinosad 0.02%",
+          "biological": "Release Trichogramma chilonis",
+          "cultural": "Remove damaged fruits regularly"
+        }
+      },
+      {
+        "id": "I005",
+        "name": "Jassids",
+        "crop": "Cotton",
+        "damage": [
+          "Leaf edges curl downwards",
+          "Reddening and drying of leaves"
+        ],
+        "management": {
+          "chemical": "Apply Acetamiprid 0.04%",
+          "cultural": "Use resistant cotton varieties"
+        }
+      },
+      {
+        "name": "Thrips",
+        "crop": "Various (Onion, Tomato)",
+        "damage": [
+          "Feed on leaves causing silvering",
+          "Transmit tospoviruses"
+        ],
+        "management": {
+          "chemical": "Apply spinosad or pyrethroids as labeled",
+          "biological": "Encourage predatory mites; use sticky traps"
+        },
+        "id": "I006"
+      },
+      {
+        "name": "Fall Armyworm",
+        "crop": "Maize",
+        "damage": [
+          "Defoliation of leaves; tunnel into cobs"
+        ],
+        "management": {
+          "chemical": "Apply Bacillus thuringiensis (Bt) products or synthetic insecticides",
+          "cultural": "Plant early; use resistant hybrids"
+        },
+        "id": "I007"
+      },
+      {
+        "name": "Colorado Potato Beetle",
+        "crop": "Potato",
+        "damage": [
+          "Defoliation by adults and larvae"
+        ],
+        "management": {
+          "chemical": "Use spinosad or neonicotinoids per label",
+          "biological": "Encourage predators; handpick in small plots"
+        },
+        "id": "I008"
+      },
+      {
+        "name": "Armyworm (other)",
+        "crop": "Maize",
+        "damage": [
+          "Larvae defoliate; tunnel into cobs"
+        ],
+        "management": {
+          "general": "Scouting; Bt or insecticide; push-pull in some systems"
+        },
+        "id": "I009"
+      },
+      {
+        "name": "Acer Leafhopper",
+        "crop": "Various",
+        "damage": [
+          "Sap-sucker causing stippling"
+        ],
+        "management": {
+          "general": "Monitor and control if threshold exceeded"
+        },
+        "id": "I010"
+      },
+      {
+        "name": "Codling Moth",
+        "crop": "Apple",
+        "damage": [
+          "Larvae bore into fruit"
+        ],
+        "management": {
+          "general": "Mating disruption; targeted sprays; sanitation"
+        },
+        "id": "I011"
+      },
+      {
+        "name": "Wireworm",
+        "crop": "Cereals",
+        "damage": [
+          "Larvae feed on seeds and roots"
+        ],
+        "management": {
+          "general": "Crop rotation; seed treatments"
+        },
+        "id": "I012"
+      },
+      {
+        "name": "Leaf-footed Bug",
+        "crop": "Pomegranate, fruit",
+        "damage": [
+          "Pierce fruit causing blemish"
+        ],
+        "management": {
+          "general": "Sanitation and insecticide at thresholds"
+        },
+        "id": "I013"
+      },
+      {
+        "name": "Pea Aphid",
+        "crop": "Pea",
+        "damage": [
+          "Sap-sucking and virus vector"
+        ],
+        "management": {
+          "general": "Encourage parasitoids; insecticidal soaps"
+        },
+        "id": "I014"
+      },
+      {
+        "name": "Rice Weevil",
+        "crop": "Stored grain",
+        "damage": [
+          "Storage pest causing weight loss"
+        ],
+        "management": {
+          "general": "Maintain dry storage; fumigation if needed"
+        },
+        "id": "I015"
+      },
+      {
+        "name": "Mango Hopper",
+        "crop": "Mango",
+        "damage": [
+          "Sucks sap causing sooty mold"
+        ],
+        "management": {
+          "general": "Manage with insecticides and field sanitation"
+        },
+        "id": "I016"
+      },
+      {
+        "name": "Pineapple Mealybug",
+        "crop": "Pineapple",
+        "damage": [
+          "Sap sucking causing wilt and sooty mold"
+        ],
+        "management": {
+          "general": "Use clean planting material; biological control"
+        },
+        "id": "I017"
+      },
+      {
+        "name": "Grass Caterpillar",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I018"
+      },
+      {
+        "name": "Bean Fly",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I019"
+      },
+      {
+        "name": "Onion Thrips",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I020"
+      },
+      {
+        "name": "Citrus Psyllid",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I021"
+      },
+      {
+        "name": "Black Vine Weevil",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I022"
+      },
+      {
+        "name": "Mediterranean Fruit Fly",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I023"
+      },
+      {
+        "name": "Paddy Earhead Bug",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I024"
+      },
+      {
+        "name": "Sugarcane Top Borer",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I025"
+      },
+      {
+        "name": "Olive Fruit Fly",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I026"
+      },
+      {
+        "name": "Potato Tuber Moth",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I027"
+      },
+      {
+        "name": "Cabbage Semilooper",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I028"
+      },
+      {
+        "name": "Banana Weevil",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I029"
+      },
+      {
+        "name": "Tea Mosquito Bug",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I030"
+      },
+      {
+        "name": "Cereal Leaf Beetle",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I031"
+      },
+      {
+        "name": "Spodoptera litura",
+        "crop": "Various/Specific",
+        "damage": [
+          "Feeding or boring damage typical of species"
+        ],
+        "management": {
+          "general": "Monitor, use cultural controls and targeted insecticides or biologicals as appropriate"
+        },
+        "id": "I032"
+      }
+    ],
+    "weeds": [
+      {
+        "id": "W001",
+        "name": "Parthenium",
+        "common_name": "Congress Grass",
+        "effect": "Competes for nutrients and causes dermatitis in humans",
+        "control": {
+          "chemical": "Spray Glyphosate 41% SL",
+          "biological": "Release Zygogramma bicolorata beetle"
+        }
+      },
+      {
+        "id": "W002",
+        "name": "Cyperus rotundus",
+        "common_name": "Nutgrass",
+        "effect": "Aggressive perennial weed with underground tubers",
+        "control": {
+          "chemical": "Apply Metribuzin 0.5 kg/ha",
+          "cultural": "Repeated ploughing and solarization"
+        }
+      },
+      {
+        "id": "W003",
+        "name": "Eichhornia crassipes",
+        "common_name": "Water Hyacinth",
+        "effect": "Blocks waterways, reduces oxygen levels",
+        "control": {
+          "chemical": "Spray 2,4-D 2 kg/ha",
+          "biological": "Use Neochetina beetle"
+        }
+      },
+      {
+        "id": "W004",
+        "name": "Amaranthus spinosus",
+        "common_name": "Spiny Pigweed",
+        "effect": "Competes with cereals and pulses for nutrients",
+        "control": {
+          "chemical": "Apply Pendimethalin pre-emergence 1 L/ha",
+          "cultural": "Hand weeding at 20\u201325 days"
+        }
+      },
+      {
+        "id": "W005",
+        "name": "Phalaris minor",
+        "common_name": "Canary Grass",
+        "effect": "Major weed in wheat, reduces yield by 30\u201340%",
+        "control": {
+          "chemical": "Apply Clodinafop-propargyl 60 g/ha",
+          "cultural": "Use crop rotation with legumes"
+        }
+      },
+      {
+        "name": "Lantana camara",
+        "common_name": "Lantana",
+        "effect": "Invasive shrub that outcompetes native vegetation",
+        "control": {
+          "chemical": "Herbicide application; follow label",
+          "biological": "Biocontrol agents evaluated in some regions",
+          "cultural": "Manual removal and consistent follow-up"
+        },
+        "id": "W006"
+      },
+      {
+        "name": "Echinochloa crus-galli",
+        "common_name": "Barnyard Grass",
+        "effect": "Competes with rice and upland crops",
+        "control": {
+          "cultural": "Water management in paddy; stale seedbed technique",
+          "chemical": "Selective grass herbicides in cereals"
+        },
+        "id": "W007"
+      },
+      {
+        "name": "Convolvulus arvensis",
+        "common_name": "Field Bindweed",
+        "effect": "Perennial twining weed; reduces crop yields",
+        "control": {
+          "cultural": "Repeated tillage; crop rotation",
+          "chemical": "Persistent herbicide regimes"
+        },
+        "id": "W008"
+      },
+      {
+        "name": "Hyptis spp.",
+        "common_name": "Bushmint",
+        "effect": "Invades disturbed areas; reduces yields",
+        "control": {
+          "general": "Integrated control: cultural, mechanical, chemical as needed"
+        },
+        "id": "W009"
+      },
+      {
+        "name": "Tithonia diversifolia",
+        "common_name": "Mexican sunflower",
+        "effect": "Aggressive colonizer in tropics",
+        "control": {
+          "general": "Integrated control: cultural, mechanical, chemical as needed"
+        },
+        "id": "W010"
+      },
+      {
+        "name": "Verbena brasiliensis",
+        "common_name": "Vervain",
+        "effect": "Competitive weed in pastures",
+        "control": {
+          "general": "Integrated control: cultural, mechanical, chemical as needed"
+        },
+        "id": "W011"
+      },
+      {
+        "name": "Oxalis spp.",
+        "common_name": "Soursob",
+        "effect": "Competes in gardens and crops",
+        "control": {
+          "general": "Integrated control: cultural, mechanical, chemical as needed"
+        },
+        "id": "W012"
+      },
+      {
+        "name": "Phyllanthus niruri",
+        "common_name": "Stonebreaker",
+        "effect": "Broadleaf weed in tropics",
+        "control": {
+          "general": "Integrated control: cultural, mechanical, chemical as needed"
+        },
+        "id": "W013"
+      },
+      {
+        "name": "Velvetleaf",
+        "common_name": "Velvetleaf",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W014"
+      },
+      {
+        "name": "Black Nightshade",
+        "common_name": "Black Nightshade",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W015"
+      },
+      {
+        "name": "Sorgum vulgare (Volunteer)",
+        "common_name": "Sorgum vulgare (Volunteer)",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W016"
+      },
+      {
+        "name": "Bindweed (Convolvulus)",
+        "common_name": "Bindweed (Convolvulus)",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W017"
+      },
+      {
+        "name": "Marestail (Horseweed)",
+        "common_name": "Marestail (Horseweed)",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W018"
+      },
+      {
+        "name": "Ragweed",
+        "common_name": "Ragweed",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W019"
+      },
+      {
+        "name": "Goldenrod",
+        "common_name": "Goldenrod",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W020"
+      },
+      {
+        "name": "Water Lettuce",
+        "common_name": "Water Lettuce",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W021"
+      },
+      {
+        "name": "Ichneumon weed",
+        "common_name": "Ichneumon weed",
+        "effect": "Competitive weed affecting yields",
+        "control": {
+          "general": "Integrated management: mechanical, cultural, chemical where needed"
+        },
+        "id": "W022"
+      }
+    ],
+    "fruits": [
+      {
+        "id": "F001",
+        "name": "Mango",
+        "varieties": [
+          "Alphonso",
+          "Banganapalli",
+          "Dasheri"
+        ],
+        "nutrients": "Rich in Vitamin A and C",
+        "harvest_time": "March to June",
+        "storage": "Store at 13\u00b0C for 2\u20133 weeks"
+      },
+      {
+        "id": "F002",
+        "name": "Banana",
+        "varieties": [
+          "Grand Naine",
+          "Rasthali",
+          "Poovan"
+        ],
+        "nutrients": "Potassium and Vitamin B6",
+        "harvest_time": "Throughout the year",
+        "storage": "Keep at 12\u201314\u00b0C, avoid chilling injury"
+      },
+      {
+        "id": "F003",
+        "name": "Guava",
+        "varieties": [
+          "Allahabad Safeda",
+          "Lucknow 49"
+        ],
+        "nutrients": "High in Vitamin C and fiber",
+        "harvest_time": "August to October",
+        "storage": "Store at 5\u00b0C for up to 3 weeks"
+      },
+      {
+        "id": "F004",
+        "name": "Papaya",
+        "varieties": [
+          "Red Lady",
+          "Coorg Honey Dew"
+        ],
+        "nutrients": "Vitamin A, C, and digestive enzyme papain",
+        "harvest_time": "6\u20139 months after planting",
+        "storage": "Keep at 10\u201313\u00b0C to slow ripening"
+      },
+      {
+        "id": "F005",
+        "name": "Grapes",
+        "varieties": [
+          "Thompson Seedless",
+          "Anab-e-Shahi"
+        ],
+        "nutrients": "Rich in antioxidants and Vitamin K",
+        "harvest_time": "January to April",
+        "storage": "Refrigerate at 0\u20131\u00b0C for 1 month"
+      },
+      {
+        "name": "Orange",
+        "varieties": [
+          "Valencia",
+          "Navel"
+        ],
+        "nutrients": "Vitamin C, fiber",
+        "harvest_time": "Winter to spring",
+        "storage": "Cool, humid storage; avoid freezing",
+        "id": "F006"
+      },
+      {
+        "name": "Apple",
+        "varieties": [
+          "Gala",
+          "Honeycrisp",
+          "Fuji"
+        ],
+        "nutrients": "Vitamin C, fiber",
+        "harvest_time": "Autumn",
+        "storage": "Cold storage at ~0\u00b0C for months",
+        "id": "F007"
+      },
+      {
+        "name": "Pomegranate",
+        "varieties": [
+          "Ganesh",
+          "Bhagwa"
+        ],
+        "nutrients": "Antioxidants, Vitamin C",
+        "harvest_time": "Autumn",
+        "storage": "Cool, dry storage; avoid bruising",
+        "id": "F008"
+      },
+      {
+        "name": "Lychee",
+        "varieties": [
+          "Bombai",
+          "China"
+        ],
+        "nutrients": "Vitamin C and flavonoids",
+        "harvest_time": "Summer",
+        "storage": "Cool, short-term storage",
+        "id": "F009"
+      },
+      {
+        "name": "Jackfruit",
+        "varieties": [
+          "Black Gold"
+        ],
+        "nutrients": "High energy and fiber",
+        "harvest_time": "Summer-Autumn",
+        "storage": "Cool storage; handle carefully",
+        "id": "F010"
+      },
+      {
+        "name": "Kiwifruit",
+        "varieties": [
+          "Hayward"
+        ],
+        "nutrients": "Vitamin C, fiber",
+        "harvest_time": "Autumn",
+        "storage": "Cold storage; controlled atmosphere management",
+        "id": "F011"
+      },
+      {
+        "name": "Strawberry",
+        "varieties": [
+          "Chandler"
+        ],
+        "nutrients": "Vitamin C",
+        "harvest_time": "Spring-Summer",
+        "storage": "Refrigerate; short shelf life",
+        "id": "F012"
+      },
+      {
+        "name": "Persimmon",
+        "varieties": [
+          "Fuyu"
+        ],
+        "nutrients": "Vitamin A and C",
+        "harvest_time": "Autumn",
+        "storage": "Cool, short-term storage",
+        "id": "F013"
+      },
+      {
+        "name": "Mulberry",
+        "varieties": [
+          "Local"
+        ],
+        "nutrients": "Antioxidants and fiber",
+        "harvest_time": "Spring-Summer",
+        "storage": "Short-term refrigeration",
+        "id": "F014"
+      },
+      {
+        "name": "Apricot",
+        "varieties": [
+          "Moorpark"
+        ],
+        "nutrients": "Vitamin A and C",
+        "harvest_time": "Summer",
+        "storage": "Cold storage; handle gently",
+        "id": "F015"
+      }
+    ]
+  }
+}
